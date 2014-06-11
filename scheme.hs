@@ -63,7 +63,7 @@ parseExpr = parseAtom
 readExpr :: String -> String
 readExpr input = case parse parseExpr "lisp" input of
   Left err -> "No match: " ++ show err
-  Right val -> "Found value"
+  Right val -> "Valid Lisp"
 
 main :: IO ()
 main = do
